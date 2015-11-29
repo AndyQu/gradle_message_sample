@@ -1,0 +1,9 @@
+rootProject.metaClass.producerMessage = 'Watch the order of evaluation.'
+
+'''
+task produce<<{
+    println "Producing message:"
+    rootProject.metaClass.producerMessage = 'Watch the order of execution.'
+}
+'''
+println "${project.name} configured"

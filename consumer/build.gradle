@@ -1,0 +1,6 @@
+evaluationDependsOn(':producer')
+def message=rootProject.producerMessage
+task consume() <<{
+    println("Consuming message: ${message}")
+}
+println "${project.name} configured"
